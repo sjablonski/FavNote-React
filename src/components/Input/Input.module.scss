@@ -1,0 +1,53 @@
+.wrapper {
+  position: relative;
+  width: 100%;
+  margin: 2.4rem 0;
+}
+
+.input,
+.textarea {
+  border: none;
+  border-bottom: 0.2rem solid #7d7d7d;
+  width: 100%;
+  color: #7d7d7d;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+}
+
+.textarea {
+  resize: none;
+  min-height: 15rem;
+}
+
+.input:focus,
+.textarea:focus {
+  outline: none;
+  border-bottom: 0.2rem solid #1e58ff;
+}
+
+.input:focus + .label,
+.input:not(:placeholder-shown) + .label,
+.textarea:focus + .label,
+.textarea:not(:placeholder-shown) + .label {
+  top: -2.2rem;
+  font-size: 1.3rem;
+}
+
+.label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #7d7d7d;
+  transition: 0.2s ease-out all;
+}
+
+.errorLabel {
+  @extend .label;
+  color: #c0392b;
+}
+
+.errorMessage {
+  font-size: 1rem;
+  color: #c0392b;
+}

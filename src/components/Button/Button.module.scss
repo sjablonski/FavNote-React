@@ -1,0 +1,109 @@
+@keyframes gradientTransition {
+  0% {
+    background: linear-gradient(to right, #1e58ff 0%, transparent 0%);
+  }
+  25% {
+    background: linear-gradient(to right, #1e58ff 25%, transparent 25%);
+  }
+  50% {
+    background: linear-gradient(to right, #1e58ff 50%, transparent 50%);
+  }
+  75% {
+    background: linear-gradient(to right, #1e58ff 75%, transparent 75%);
+  }
+  100% {
+    background: linear-gradient(to right, #1e58ff 100%, transparent 100%);
+    color: #ffffff;
+  }
+}
+
+@keyframes gradientTransitionSecondary {
+  0% {
+    background: linear-gradient(to right, transparent 0%, #1e58ff 0%);
+  }
+  25% {
+    background: linear-gradient(to right, transparent 25%, #1e58ff 25%);
+  }
+  50% {
+    background: linear-gradient(to right, transparent 50%, #1e58ff 50%);
+  }
+  75% {
+    background: linear-gradient(to right, transparent 75%, #1e58ff 75%);
+  }
+  100% {
+    background: linear-gradient(to right, transparent 100%, #1e58ff 100%);
+    color: #1e58ff;
+  }
+}
+
+@keyframes gradientTransitionDanger {
+  0% {
+    background: linear-gradient(to right, #c0392b 0%, transparent 0%);
+  }
+  25% {
+    background: linear-gradient(to right, #c0392b 25%, transparent 25%);
+  }
+  50% {
+    background: linear-gradient(to right, #c0392b 50%, transparent 50%);
+  }
+  75% {
+    background: linear-gradient(to right, #c0392b 75%, transparent 75%);
+  }
+  100% {
+    background: linear-gradient(to right, #c0392b 100%, transparent 100%);
+    color: #ffffff;
+  }
+}
+
+.wrapper {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.button {
+  width: 100%;
+  padding: 0.7rem 1.2rem;
+  background: none;
+  border: 0.2rem solid #1e58ff;
+  color: #1e58ff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-decoration: none;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    animation: gradientTransition 0.1s linear;
+    animation-fill-mode: forwards;
+  }
+}
+
+.secondary {
+  @extend .button;
+
+  background: #1e58ff;
+  color: #ffffff;
+  font-weight: 700;
+  box-shadow: 0 0.5rem 2rem -0.5rem rgba(#818181, 0.9);
+
+  &:hover {
+    animation: gradientTransitionSecondary 0.1s linear;
+    animation-fill-mode: forwards;
+  }
+}
+
+.danger {
+  @extend .button;
+
+  border: 0.2rem solid #c0392b;
+  color: #c0392b;
+
+  &:hover {
+    animation: gradientTransitionDanger 0.1s linear;
+    animation-fill-mode: forwards;
+  }
+}

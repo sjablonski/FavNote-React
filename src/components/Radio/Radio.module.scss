@@ -1,0 +1,25 @@
+.label {
+  display: inline-flex;
+  margin-right: 1.2rem;
+  align-items: center;
+  color: #7d7d7d;
+}
+
+.input {
+  display: none;
+
+  &:checked + .customRadioButton {
+    border: 0.2rem solid #1e58ff;
+    background-color: #1e58ff;
+    box-shadow: inset 0 0 0 0.2rem white;
+  }
+}
+
+.customRadioButton {
+  border: 0.2rem solid #7d7d7d;
+  border-radius: 50%;
+  width: 1.6rem;
+  height: 1.6rem;
+  display: inline-block;
+  margin-right: 0.4rem;
+}

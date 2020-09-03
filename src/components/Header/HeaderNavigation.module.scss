@@ -1,0 +1,23 @@
+.navList {
+  list-style: none;
+  padding: 0;
+}
+
+.navItem {
+  display: inline-block;
+  margin-right: 4rem;
+
+  &:first-child {
+    margin-left: 8rem;
+  }
+
+  &Link {
+    color: #818181;
+    font-size: 1.4rem;
+    text-decoration: none;
+
+    &Active {
+      font-weight: 700;
+    }
+  }
+}
