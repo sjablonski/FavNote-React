@@ -2,6 +2,8 @@
 
 Project based on the course: [React - Od Podstaw](https://eduweb.pl/programowanie-i-www/reactjs/react-od-podstaw)
 
+Demo: https://favnote-react-sjablonski.netlify.app/
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
