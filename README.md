@@ -4,6 +4,11 @@ Project based on the course: [React - Od Podstaw](https://eduweb.pl/programowani
 
 Demo: https://favnote-react-sjablonski.netlify.app/
 
+Technology Stack: 
+* React
+* React-Router
+* SCSS
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
